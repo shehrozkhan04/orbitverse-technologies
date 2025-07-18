@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit Verse Technologies</title>
+    <link rel="icon" type="image/png" href="images/logowhite.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body{
+          background-color: #f1f1f1;
+        }
+        .art{
+          width: 90%;
+            height: 100%;
+            margin-left: 5%;
+            margin-bottom: 30px;
+            border-radius: 60px;
+            box-shadow: 5px 15px 20px  rgba(0,0,0,0.2);
+            text-align: center;
+            background-color: #fff;
+        }
+       
+        .art-sec{
+          padding: 20px 20px;
+          display:flex;
+          justify-content:space-around;
+          align-items:center;
+        }
+        .card{
+           width:30%;
+           height:250px;
+           border-radius: 60px;
+           box-shadow: 5px 15px 20px  rgba(0,0,0,0.2);
+        }
+        .card img{
+          width:auto;
+          height:75%;
+          margin-top:35px;
+          border-radius: 10px;
+        }
+        /* Image Popup Modal */
+        .img-modal {
+          display: none; 
+          position: fixed; 
+          z-index: 9999; 
+          padding-top: 60px; 
+          left: 0; top: 0; width: 100%; height: 100%; 
+          overflow: auto; 
+          background-color: rgba(0,0,0,0.8);
+        }
+
+        .img-modal-content {
+          margin: auto;
+          display: block;
+          max-width: 80vw;
+          max-height: 80vh;
+          border-radius: 20px;
+          box-shadow: 0 0 30px #000;
+        }
+
+        .img-modal-close {
+          position: absolute;
+          top: 30px;
+          right: 50px;
+          color: #fff;
+          font-size: 40px;
+          font-weight: bold;
+          cursor: pointer;
+          z-index: 10000;
+          transition: color 0.2s;
+        }
+        .img-modal-close:hover { color: #1A76D1; }
+        .art-content{
+          padding:30px 50px;
+        }
+        .art-content h2{
+          font-family:"kugile";
+          font-size:50px;
+          color: #1A76D1;
+        }
+    </style>
+</head>
+<body>
+  <div id="preloader">
+    <div class="orbit-preloader">
+      <div class="orbit-center"></div>
+      <div class="orbit-ring"></div>
+      <div class="orbit-dot"></div>
+    </div>
+  </div>
+    
+    <div class="container">
+      <div class="nav">
+        <div class="logo">
+        <a href="index.html"><img src="images/logoblack.png" alt=""></a>
+        </div>
+        <div class="menu">
+            <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Services</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Contact</a></li>
+            </ul>
+        </div>
+        <button class="hamburger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+     </div>
+
+    <!-- Mobile Menu Sidebar -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="close-menu" aria-label="Close menu">&times;</button>
+      <ul>
+        <li><a href="index.html"><strong>Home</strong></a></li>
+    <li><a href="index.html">Services</a></li>
+    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Contact</a></li>
+      </ul>
+    </div>
+     <div class="custom-marquee">
+        <div class="marquee-inner">
+            <span>IMMERSIVE WEB EXPERIENCES</span>
+            <span>STUNNING DIGITAL ART</span>
+            <span>CREATIVE ANIMATION WORK</span>
+            <span>INTERACTIVE UI/UX DESIGNS</span>
+            <span>HIGH-PERFORMANCE WEBSITES</span>
+            <span>FUTURISTIC SOFTWARE SOLUTIONS</span>
+          
+            <!-- Repeat for smooth loop -->
+            <span>IMMERSIVE WEB EXPERIENCES</span>
+            <span>STUNNING DIGITAL ART</span>
+            <span>CREATIVE ANIMATION WORK</span>
+            <span>INTERACTIVE UI/UX DESIGNS</span>
+            <span>HIGH-PERFORMANCE WEBSITES</span>
+            <span>FUTURISTIC SOFTWARE SOLUTIONS</span>
+          </div>
+    </div>
+          
+          <div class="art">
+          <div class="art-content">
+          <h2>My Art Work</h2>
+    </div>
+            <div class="art-sec">
+                <div class="card">
+                <img src="images/(12).jpg" alt="">
+                </div>
+                <div class="card">
+                <img style="width:75%; height:60%; margin-top:45px;" src="images/(13).jpg" alt="">
+                </div>
+                <div class="card">
+                <img src="images/(14).jpg" alt="">
+                </div>
+            </div>
+            <div class="art-sec">
+                <div class="card">
+                <img src="images/(15).jpg" alt="">
+                </div>
+                <div class="card">
+                <img src="images/(16).jpg" alt="">
+                </div>
+                <div class="card">
+                <img src="images/(17).jpg" alt="">
+                </div>
+            </div>
+            <div class="art-sec">
+                <div class="card">
+                <img style="width:75%; height:60%; margin-top:45px;" src="images/(18).jpg" alt="">
+                </div>
+                <div class="card">
+                <img style="width:75%; height:60%; margin-top:45px;" src="images/(19).jpg" alt="">
+                </div>
+                <div class="card">
+                <img src="images/(20).jpg" alt="">
+                </div>
+            </div>
+            <div class="art-sec">
+                <div class="card">
+                <img src="images/(21).jpg" alt="">
+                </div>
+                <div class="card">
+                <img src="images/(22).jpg" alt="">
+                </div>
+                <div class="btn"><a href="artWork3.html">See More...</a></div>
+                </div>
+            </div>
+        </div>
+
+
+      <div class="custom-marquee">
+            <div class="marquee-inner">
+                <span>IMMERSIVE WEB EXPERIENCES</span>
+                <span>STUNNING DIGITAL ART</span>
+                <span>CREATIVE ANIMATION WORK</span>
+                <span>INTERACTIVE UI/UX DESIGNS</span>
+                <span>HIGH-PERFORMANCE WEBSITES</span>
+                <span>FUTURISTIC SOFTWARE SOLUTIONS</span>
+              
+                <!-- Repeat for smooth loop -->
+                <span>IMMERSIVE WEB EXPERIENCES</span>
+                <span>STUNNING DIGITAL ART</span>
+                <span>CREATIVE ANIMATION WORK</span>
+                <span>INTERACTIVE UI/UX DESIGNS</span>
+                <span>HIGH-PERFORMANCE WEBSITES</span>
+                <span>FUTURISTIC SOFTWARE SOLUTIONS</span>
+              </div>
+            </div>
+            <footer class="footer">
+              <div class="footer-container">
+                  <!-- Logo/Brand -->
+                  <a href="index.html" class="footer-logo">
+                      <img src="images/logoblack.png" alt="">
+                  </a>
+        
+                  <!-- Navigation Menu -->
+                  <nav class="footer-nav">
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li><a href="index.html">Services</a></li>
+                          <li><a href="index.html">About</a></li>
+                          <li><a href="artWork.html">Art Works</a></li>
+                          <li><a href="webWork.html">Web Works</a></li>
+                          <li><a href="index.html">Contact</a></li>
+                      </ul>
+                  </nav>
+        
+                  <!-- Social Media Icons -->
+                  <div class="social-icons">
+                    <a href="http://wa.me/923323866931" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/19CyMiGGYd/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/ov_technologies_?igsh=OGljN3Q0Z2V3bzZ1" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+              </div>
+          </footer>
+              
+    
+    
+    <!-- Image Popup Modal -->
+    <div id="imgModal" class="img-modal">
+      <span class="img-modal-close">&times;</span>
+      <img class="img-modal-content" id="imgModalImg">
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+    document.querySelectorAll('.card img').forEach(function(img) {
+      img.addEventListener('click', function() {
+        var modal = document.getElementById('imgModal');
+        var modalImg = document.getElementById('imgModalImg');
+        modal.style.display = "block";
+        modalImg.src = this.src;
+      });
+    });
+
+    document.querySelector('.img-modal-close').onclick = function() {
+      document.getElementById('imgModal').style.display = "none";
+    };
+
+    window.onclick = function(event) {
+      var modal = document.getElementById('imgModal');
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+    </script>
+    <script>
+window.addEventListener('load', function() {
+  const preloader = document.getElementById('preloader');
+  setTimeout(() => {
+    preloader.classList.add('fade-out');
+    setTimeout(() => {
+      preloader.style.display = 'none';
+    }, 700);
+  }, 700);
+});
+</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', function () {
+      if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+      gsap.registerPlugin(ScrollTrigger);
+      // Only animate cards
+      gsap.utils.toArray('.card').forEach((card, i) => {
+        gsap.from(card, {
+          opacity: 0,
+          y: 40,
+          duration: 0.7,
+          delay: 0.1 * i,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 92%',
+          }
+        });
+      });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit Verse Technologies</title>
+    <link rel="icon" type="image/png" href="images/logowhite.png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .submit{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 5%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+             border-radius: 60px;
+    box-shadow: 5px 15px 20px  rgba(0,0,0,0.2);
+    background-color: #fff;
+        }
+        .text{
+            font-family: 'kugile';
+              color: #1A76D1;
+            
+        }
+    </style>
+</head>
+<body>
+  <div id="preloader">
+    <div class="orbit-preloader">
+      <div class="orbit-center"></div>
+      <div class="orbit-ring"></div>
+      <div class="orbit-dot"></div>
+    </div>
+  </div>
+ <div class="container">
+  <div class="nav">
+    <div class="logo">
+    <a href="index.html"><img src="images/logoblack.png" alt=""></a>
+    </div>
+    <div class="menu">
+        <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html">Services</a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html">Contact</a></li>
+        </ul>
+    </div>
+    <button class="hamburger" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+ </div>
+
+<!-- Mobile Menu Sidebar -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="close-menu" aria-label="Close menu">&times;</button>
+  <ul>
+    <li><a href="index.html"><strong>Home</strong></a></li>
+    <li><a href="index.html">Services</a></li>
+    <li><a href="index.html">About</a></li>
+    <li><a href="index.html">Contact</a></li>
+  </ul>
+</div>
+        <div class="custom-marquee">
+           <div class="marquee-inner">
+               <span>IMMERSIVE WEB EXPERIENCES</span>
+               <span>STUNNING DIGITAL ART</span>
+               <span>CREATIVE ANIMATION WORK</span>
+               <span>INTERACTIVE UI/UX DESIGNS</span>
+               <span>HIGH-PERFORMANCE WEBSITES</span>
+               <span>FUTURISTIC SOFTWARE SOLUTIONS</span>
+             
+               <!-- Repeat for smooth loop -->
+               <span>IMMERSIVE WEB EXPERIENCES</span>
+               <span>STUNNING DIGITAL ART</span>
+               <span>CREATIVE ANIMATION WORK</span>
+               <span>INTERACTIVE UI/UX DESIGNS</span>
+               <span>HIGH-PERFORMANCE WEBSITES</span>
+               <span>FUTURISTIC SOFTWARE SOLUTIONS</span>
+             </div>
+             
+         </div>
+
+       <div class="submit">
+        <div class="text">
+            <h1>Congratulations!🎉 Your Message Have Been Submitted</h1>
+        </div>
+        <div class="btn"><a href="index.html">Go To Home Page</a></div>
+       </div>
+
+
+
+        <div class="custom-marquee">
+            <div class="marquee-inner">
+                <span>IMMERSIVE WEB EXPERIENCES</span>
+                <span>STUNNING DIGITAL ART</span>
+                <span>CREATIVE ANIMATION WORK</span>
+                <span>INTERACTIVE UI/UX DESIGNS</span>
+                <span>HIGH-PERFORMANCE WEBSITES</span>
+                <span>FUTURISTIC SOFTWARE SOLUTIONS</span>
+              
+                <!-- Repeat for smooth loop -->
+                <span>IMMERSIVE WEB EXPERIENCES</span>
+                <span>STUNNING DIGITAL ART</span>
+                <span>CREATIVE ANIMATION WORK</span>
+                <span>INTERACTIVE UI/UX DESIGNS</span>
+                <span>HIGH-PERFORMANCE WEBSITES</span>
+                <span>FUTURISTIC SOFTWARE SOLUTIONS</span>
+              </div>
+              
+          </div>
+          
+          <footer class="footer">
+            <div class="footer-container">
+                <!-- Logo/Brand -->
+                <a href="index.html" class="footer-logo">
+                    <img src="images/logoblack.png" alt="">
+                </a>
+      
+                <!-- Navigation Menu -->
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Services</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="artWork.html">Art Works</a></li>
+                        <li><a href="webWork.html">Web Works</a></li>
+                        <li><a href="index.html">Contact</a></li>
+                    </ul>
+                </nav>
+      
+                <!-- Social Media Icons -->
+                <div class="social-icons">
+                  <a href="http://wa.me/923323866931" aria-label="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                  <a href="https://www.facebook.com/share/19CyMiGGYd/" aria-label="Facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/ov_technologies_?igsh=OGljN3Q0Z2V3bzZ1" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+        </footer>
+         </div>
+         <script src="script.js"></script>
+         <script>
+window.addEventListener('load', function() {
+  const preloader = document.getElementById('preloader');
+  setTimeout(() => {
+    preloader.classList.add('fade-out');
+    setTimeout(() => {
+      preloader.style.display = 'none';
+    }, 700);
+  }, 700);
+});
+</script>
+</body>
+</html>

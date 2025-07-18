@@ -83,19 +83,7 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Marquee (all)
-  gsap.utils.toArray('.custom-marquee').forEach((marquee, i) => {
-    gsap.from(marquee, {
-      opacity: 0,
-      x: i % 2 === 0 ? -60 : 60,
-      duration: 0.9,
-      ease: 'power2.out',
-      scrollTrigger: {
-        trigger: marquee,
-        start: 'top 90%',
-      }
-    });
-  });
+
 
   // Explore Section (first .section)
   gsap.from('.section', {
@@ -133,27 +121,5 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Contact Section
-  gsap.from('.contact-section', {
-    opacity: 0,
-    y: 60,
-    duration: 1.1,
-    ease: 'power2.out',
-    scrollTrigger: {
-      trigger: '.contact-section',
-      start: 'top 85%',
-    }
-  });
 
-  // Footer
-  gsap.from('.footer', {
-    opacity: 0,
-    y: 40,
-    duration: 1,
-    ease: 'power2.out',
-    scrollTrigger: {
-      trigger: '.footer',
-      start: 'top 95%',
-    }
-  });
 });
